@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="fashion.css"> -->
+
+    <!-- unicons link cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    
+
+    <!-- fontawesom link cdn -->
+    <script src="https://use.fontawesome.com/41db31bc4a.js"></script>
+    
+    <style>
+
+       
+        .ul{
+            width: 85%;
+            margin: 10px auto;
+            display: flex;
+            /* border: 1px solid red; */
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            /* list-style-type: disc; */
+        }
+      
+
+        #bg-image{
+            margin: 4px 0;
+        }
+
+        #bg-image h1{
+            font-family: raleway;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .body{
+            width: 85%;
+            margin: 2rem auto;
+
+        }
+
+        .body h1{
+            font-size: 3rem;
+            font-family: montsbold;
+            width: 80%;
+        }
+
+        .gap{
+            padding: 0.8rem 0;
+            font-family: raleway;
+            font-size: 1.7rem;
+        }
+
+        .tiny{
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        img{
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            max-width: 100%;
+        }
+
+        .smaller{
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+       #flex{
+           display: flex;
+           gap: 3rem;
+           flex-wrap: wrap;
+           align-items: center;
+           justify-content: center;
+        }
+
+       #image{
+           position: relative;
+           overflow: hidden;
+           /* border: 2px solid green; */
+           /* background-color: black; */
+        }
+        
+        .middle{
+            position: absolute;
+            transition: .5s ease-in-out;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+        #image:hover .middle{
+            left: 0;
+        }
+        
+        .middle h3{
+            font-size: 1rem;
+            color: #fff;
+            background-color: #e8491d;
+            padding: 5px;
+            opacity: 0;
+            transition: .3s ease-in-out;
+            animation: delay 1s 1s linear forwards;
+        }
+
+        .middle h3:hover{
+            background-color: #354a4a;
+        }
+        
+
+        @keyframes delay {
+            to{
+                opacity: 1;
+            }
+        }
+        
+        .image{
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        #list li{
+            margin: 10px 0;
+        }
+
+        p{
+            opacity: 0.6;
+            margin: 10px 0;
+        }
+
+        .color{
+            color: #e8491d;
+            font-family: montsbold;
+        }
+
+
+
+        @media (max-width: 1024px) {
+            .body h1{
+                font-size: 2rem;
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .body h1{
+                font-size: 1.5rem;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .gap{
+                font-size: 1.5rem;
+            }
+
+            
+        }
+
+    </style>
+    
+    <title>Fashion | How to style your blazer and jean</title>
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <div class="header">
+        <h1>Mozanbinova</h1>
+        <p>Fashion & Lifestyle</p>
+    </div>
+    <!-- navbar section -->
+    <div class="navbar">
+        <div class="container">
+            <ul class="socials">
+                <li><a href="">
+                    <i class="fa fa-facebook-f"></i>
+                </a></li>
+                <li><a href="https://twitter.com/MosesKanu15">
+                    <i class="fa fa-twitter"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/mozanbi__002/">
+                    <i class="fa fa-instagram"></i>
+                </a></li>
+            </ul>
+            <div class="navigation">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="fashion.html">Fashion</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <ul class="socials min">
+                        <li><a href="https://web.facebook.com/profile.php?id=100012621216933">
+                            <i class="fa fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com/MosesKanu15">
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
+                        <li><a href="https://www.instagram.com/mozanbi__002/">
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
+                        <i class="uil uil-times navv close"></i>
+                    </ul>
+                </ul>
+            </div>
+            <i class="uil uil-bars navv open active"></i>
+        </div>
+    </div>
+
+    <div class="head">
+        <p><b>FASHION</b>   ></p>
+        <P>HOW TO STYLE YUR BLAZER AND JEAN</P>
+    </div>
+
+    <div id="bg-image">
+        <img src="/images/Blazer-And-Jeans1.jpg" class="image" alt="">
+        <h1>How To Style Your Blazer And Jeans ? Tips For Girls</h1>
+    </div>
+
+    <div class="body">
+
+        <p>It’s an evergreen combination that’s incredibly versatile: the jeans and blazer outfit. But if you think this pairing is just for a casual look, you should think again. With so many different kinds of jeans, blazers and accessories, the jeans / blazer style fits almost every occasion. You can opt for a traditional look, feminine look or semi-formal look. You can choose skinny jeans, flares, ripped jeans or even print jeans. By mixing and matching your separates, you can create any look you like.</p>
+
+    
+        
+        <h3 class="gap">Classic Black Blazer With Jeans</h3>
+
+
+        <p>When you think of a blazer, the classic jacket is probably uppermost in your mind and this combo is certainly a deservedly popular choice. Skin-tight ripped jeans and a pretty top with lacy panel look great when worn with a classic black blazer – sky-high stilettos add even more emphasis to your shapely legs. For a muted colour palette, try a pair of black faded jeans with fashionable rips, worn with a plain dove-grey top and wide-lapelled black blazer, with black ballet pumps for the finishing touch. Low-rise stretch denims, together with a plain white tee and short tailored black jacket makes a simple but stylish combination, especially when you add a touch of colour with a vibrant neck scarf. A military-style buttoned blazer makes the perfect match for rolled-up jeans and a long-sleeved stretch tee, and you can make it look even better with a large-buckled leather belt and converse sneakers. Or capture the air of the polo match with denims and a single-buttoned black jacket, worn with a white shirt with folded cuffs and knee-high boots.</p>
+        
+        
+        <h3 class="gap">Navy And Brown Blazers With Jeans</h3>
+
+        <p>Making almost as strong an impression as black, blazers in navy or brown can also make just the right kind of impact. Dark blue skinny jeans with a vibrant floral print top and single-button navy blazer makes a striking combination, whilst a bolero-style navy jacket over white jeans and a striped tee gives a jaunty nautical air. <br><br> Browns and tans always look fabulous with jeans, especially when picked up by your shoes or boots. Show some Spanish matador flair with a short tailored brown blazer with decorative closure, together with black stretch jeans and a crisp white shirt – tooled leather cowboy boots lift this outfit from great to outstanding. Or wear a close-fitting short jacket over a longer pale knitted tunic and skinny jeans, with long heeled brown suede boots to make your legs look amazingly long.</p>
+
+        
+        <h3 class="gap">White And Pastel-Toned Blazers With Jeans</h3>
+
+        <p>If you’re aiming for a slightly more feminine look, you can achieve this by choosing a lighter toned blazer. A dazzling white blazer with side pockets and buttoned cuffs looks superb when teamed with ripped denim skinny jeans and a white shirt, and you can add even more dazzle by sporting a pair of high-heeled lace-up sandals. White blazers could have been made to go with faded pale blue jeans, such as an outfit with boyfriend jeans, gentle grey top with decorative neckline and soft white blazer. And a subtle cream three-quarter sleeved blazer with matching top look amazing against dark ripped denims; neutral pointed heels and understated clutch bag are the ideal accessories.</p>
+
+        <h3 class="gap">And Not Forgetting Your Feet…</h3>
+
+        <p>One simple way to ring the changes with the same outfit is to vary your footwear and the blazer with jeans outfit looks wonderful whatever your choice. For a sporty look, try converse sneakers or classic trainers, or emphasise your delicate side with little ballet pumps, flats or flip-flops. You can strut your stuff amazingly with heels, whether that’s deliciously pointed stilettos, a plethora of laces or pretty strappy sandals. And every kind of boot matches well with jeans and blazer outfits, including short boots, work boots or long knee-length versions.</p>
+
+        <p>Featured Photo: Pair a low cut neck line top with a white blazer, ripped jeans and nude shoes and bag. The neutral colour scheme and the various pieces makes for a very balanced look. Via <span class="color">Christine Andrew</span> </p>
+
+        <img src="/images/Blazer-And-Jeans-Styles2.jpg" alt="" class="image">
+        
+        <p> <span class="color">Emma Hill</span> is wearing a blazer in a playful shade of pale pink, paired with roughly cut-off denim jeans, a grey tee, and pastel coloured flats.</p>
+        
+        <p>Bag: Gucci, Shoes: Revolve, Blazer: Zara.</p>
+        
+        <img src="/images/Blazer-And-Jeans-Styles3.jpg" alt="" class="image">
+
+        <p>Match denim jeans with a blazer to get this effortlessly chic style which <span class="color">Lucy Connelly</span>  is rocking. She pairs a navy blazer with a grey V neck and jeans to create this look.</p>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy;2022 All Rights Reserved - <span class="bold"> Mozanbinova</span></p>
+    </footer>
+
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>

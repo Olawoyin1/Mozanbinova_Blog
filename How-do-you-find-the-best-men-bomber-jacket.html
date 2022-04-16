@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="fashion.css"> -->
+
+    <!-- unicons link cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    
+
+    <!-- fontawesom link cdn -->
+    <script src="https://use.fontawesome.com/41db31bc4a.js"></script>
+    
+    <style>
+
+       
+        .ul{
+            width: 85%;
+            margin: 10px auto;
+            display: flex;
+            /* border: 1px solid red; */
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            /* list-style-type: disc; */
+        }
+      
+
+        #bg-image{
+            margin: 4px 0;
+        }
+
+        #bg-image h1{
+            font-family: raleway;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .body{
+            width: 85%;
+            margin: 2rem auto;
+
+        }
+
+        .body h1{
+            font-size: 3rem;
+            font-family: montsbold;
+            width: 80%;
+        }
+
+        .gap{
+            padding: 0.8rem 0;
+            font-family: raleway;
+            font-size: 1.7rem;
+        }
+
+        .tiny{
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        img{
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            max-width: 100%;
+        }
+
+        .smaller{
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+       #flex{
+           display: flex;
+           gap: 3rem;
+           flex-wrap: wrap;
+           align-items: center;
+           justify-content: center;
+        }
+
+       #image{
+           position: relative;
+           overflow: hidden;
+           /* border: 2px solid green; */
+           /* background-color: black; */
+        }
+        
+        .middle{
+            position: absolute;
+            transition: .5s ease-in-out;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+        #image:hover .middle{
+            left: 0;
+        }
+        
+        .middle h3{
+            font-size: 1rem;
+            color: #fff;
+            background-color: #e8491d;
+            padding: 5px;
+            opacity: 0;
+            transition: .3s ease-in-out;
+            animation: delay 1s 1s linear forwards;
+        }
+
+        .middle h3:hover{
+            background-color: #354a4a;
+        }
+        
+
+        @keyframes delay {
+            to{
+                opacity: 1;
+            }
+        }
+        
+        .image{
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        #list li{
+            margin: 10px 0;
+        }
+
+        p{
+            opacity: 0.6;
+            margin: 10px 0;
+        }
+
+        .color{
+            color: #e8491d;
+            font-family: montsbold;
+        }
+
+
+
+        @media (max-width: 1024px) {
+            .body h1{
+                font-size: 2rem;
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .body h1{
+                font-size: 1.5rem;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .gap{
+                font-size: 1.5rem;
+            }
+
+            
+        }
+
+    </style>
+    
+    <title>Fashion | How do you find the best men's bomber jacket</title>
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <div class="header">
+        <h1>Mozanbinova</h1>
+        <p>Fashion & Lifestyle</p>
+    </div>
+    <!-- navbar section -->
+    <div class="navbar">
+        <div class="container">
+            <ul class="socials">
+                <li><a href="">
+                    <i class="fa fa-facebook-f"></i>
+                </a></li>
+                <li><a href="https://twitter.com/MosesKanu15">
+                    <i class="fa fa-twitter"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/mozanbi__002/">
+                    <i class="fa fa-instagram"></i>
+                </a></li>
+            </ul>
+            <div class="navigation">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="fashion.html">Fashion</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <ul class="socials min">
+                        <li><a href="https://web.facebook.com/profile.php?id=100012621216933">
+                            <i class="fa fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com/MosesKanu15">
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
+                        <li><a href="https://www.instagram.com/mozanbi__002/">
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
+                        <i class="uil uil-times navv close"></i>
+                    </ul>
+                </ul>
+            </div>
+            <i class="uil uil-bars navv open active"></i>
+        </div>
+    </div>
+
+    <div class="head">
+        <p><b>FASHION</b>   ></p>
+        <P>HOW DO YOU FIND THE BEST MEN'S BOMBER JACKET</P>
+    </div>
+
+    <div id="bg-image">
+        <img src="/images/header_men_bomber_jacket.png" alt="">
+        <h1>HOW DO YOU FIND THE BEST MEN'S BOMBER JACKET</h1>
+    </div>
+
+    <div class="body">
+
+        <p>The bomber jacket! Every man with a little sense of style should have it in his wardrobe ;-) In this blog we are going to explain how to find the bomber jacket that best suits your style!</p>
+
+    
+        
+        <h3 class="gap">What is a bomber jacket?</h3>
+
+
+        <p>A bomber is traditionally a short (waist) garment with a ribbed waistband and matching cuffs. It has a zip at the front and often has four functional pockets at the top and sides. <br><br>Would you like to browse through all our bomber jackets from Asos, Tommy Hilfiger and Levi's among others? Then click on Bomber Jacks</p>
+        
+        
+        <h3 class="gap">The bomber jackets family</h3>
+
+        <p>Did you know that the bomber jacket has many variations and is actually an umbrella name for different types of bomber jackets such as: bomber jacket, pilot jacket, baseball jacket and blouson jacket. This blog is dedicated to the subcategory bomber jacket and shows you how to find the best men's bomber jacket.</p>
+
+        
+        <h3 class="gap">Why is it called a bomber jacket?</h3>
+
+        <p>Know what your classics are! So let's dig deeper into why the bomber jacket has such a rich history. Since these jackets were worn during the war, the jacket is probably named after realistic elements of the time. A bomber jacket was originally designed for US Air Force and Navy pilots. Usually they were black or olive green on the outside and had an orange colour on the inside. This was for a reason, when the pilot had to make an emergency landing on water, he could wear the bomber jacket inside out to be more conspicuous. That's what makes the bomber jacket so cool ;-)</p>
+
+        <h3 class="gap">What kind of material is the bomber jacket made of?</h3>
+
+        <p>The jackets can be found in different materials, the most popular choice for 2020 is polyester. Besides polyester, the bomber jackets are also made of nylon, satin or cotton.</p>
+            
+        <h3 class="gap">Men's bomber jacket for autumn and winter</h3>
+
+        <p>The bomber jacket is inspired by the flight jacket. The difference between these two jackets is that the bomber jacket is lighter in weight and less big, which makes it the star of autumn! For the winter the flight jacket is more suitable because of the warmer materials like fur, leather and sheepskin. On the two pictures below you can clearly see the difference between the flight jacket and the bomber jacket.</p>
+        <div id="flex">
+            <div id="image">
+        
+                <img src="/images/jacket2.png" alt="">
+                <a class="middle" href="https://www.google.com/search?q=fighter+jacket&tbm=isch&ved=2ahUKEwjN8aa7p5f3AhVO3RoKHfePAqoQ2-cCegQIABAA&oq=fighter+jack&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjoHCCMQ7wMQJzoECAAQQ1ChGFiOUmCPXmgAcAB4AIABvgKIAbIckgEIMC4xMi41LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=VAtaYs33PM66a_efitAK&bih=657&biw=1366">
+                    <h3>FIGHTER JACKET</h3>            
+                </a>
+            </div>
+
+            <div id="image">
+        
+                <img src="/images/jacket1.png" alt="">
+                
+                <a class="middle" href="https://www.google.com/search?q=bomber+jacket&sxsrf=APq-WBvlEVpq6h3fuWXA3vj5ZbgCbAE1Ag:1650068284330&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjZ5sSvp5f3AhUIzYUKHbCsBp4Q_AUoAXoECAEQAw&biw=1366&bih=657&dpr=1#imgrc=8UBcsX28M73i8M">
+                    <h3>BOMBER JACKET</h3>            
+                </a>
+                
+            </div>
+        </div>  
+
+        <h3 class="gap">What to consider before buying a gentleman's bomber jacket?</h3>
+
+        <h3 class="tiny">Fabric</h3>
+
+        <p>If you are looking for a bomber jacket for autumn, this classic is perfect. This bomber jacket is made for slightly better weather conditions, because it is usually made of lighter fabrics such as nylon, polyester, satin or cotton.</p>
+
+        <h3 class="tiny">Colour</h3>
+
+        <p>The bomber jackets often appear on the streets in olive green and black, but are you a man who wants to stand out? Then colourful bomber jackets like orange and blue might be a good choice for you.</p>
+
+        <h3 class="tiny">Fit</h3>
+
+        <p>It is important that the bomber jacket fits well. It is not difficult, but there are a few things you should pay attention to. First of all, the bomber jacket has to fit well at the shoulders. This is easy to see by checking whether the seam falls exactly where your shoulder ends and your arm begins. Secondly, go for a good fit, although oversized can be cool, it is advisable to go for a bomber jacket that fits well with your chest. You can check this by squeezing the side of the jacket, with 3-5 cm of fabric you are sitting well. Also make sure that the bomber jacket fits your waist well. Because the bomber jacket is a little more cropped than other jackets, it falls perfectly when it comes flat around the top of your trousers. Also pay attention to the length of your sleeves, as long as the end of the sleeve falls exactly at your wrist, you know you are sitting well!</p>
+
+        <h3 class="gap">The men's bomber jacket fits any style</h3>
+
+        <ul class="ul">
+            <div>
+                
+                <p>Street Style</p>
+                <div class="smaller">
+                    <img src="/images/street-style.png" class="smaller" alt="">
+
+                </div>
+            </div>
+            <div>
+                <p>Relax casual</p>
+                <div class="smaller">
+                    <img src="/images/Relax-casual.png" alt="" class="smaller">
+
+                </div>
+
+            </div>
+            <div>
+                <p>Business Casual</p>
+                <div class="smaller">
+                    <img src="/images/Bzns-casual.png" alt="" class="smaller">
+
+                </div>
+            </div>
+
+
+        </ul>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy;2022 All Rights Reserved - <span class="bold"> Mozanbinova</span></p>
+    </footer>
+
+
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,170 @@
+.lifestyle{
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(167, 164, 164);
+    background-blend-mode: multiply;
+    background-image: url(/images/lifebg.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes fade {
+    
+    to{
+        opacity: 1;
+        margin-top: 0;
+    }
+    
+}
+
+.lifestyle h1{
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+    font-family: montsbold;
+    font-size: 2.5rem;
+    animation: fade 1s linear forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.col-3{
+   
+    width: 80%;
+    margin: 10px auto;
+}
+
+.col{
+    border: 0.3px solid rgb(167, 164, 164);
+    padding: 3px;
+    margin-bottom: 1rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.photo{
+    width: 100%;
+    height: 260px;
+    /* height: 100%; */
+    /* border: 1px solid green; */
+}
+
+.read{
+    padding: 10px;
+}
+
+.read-content{
+    position: relative;
+    padding-bottom: 2rem;
+
+}
+
+.read h3{
+    font-family: montsbold;
+    margin-bottom: 10PX;
+}
+
+
+
+.read-content p{
+    margin-bottom: 30px;
+}
+
+.cont-reading{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+    padding: 0 10px;
+    font-size: 13px;
+    
+    /* position: relative; */
+}
+
+.cont-reading a{
+    color: hsl(192, 100%, 9%);
+    font-family: raleway;
+    /* border: 1px solid ; */
+    font-weight: bold;
+
+}
+
+.cont-reading::after{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 1.3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: -2rem;
+    top: 50%;
+    transform: translate(-50,-50%);
+}
+
+.cont-reading::before{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 1.3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: -2rem;
+    top: 50%;
+    transform: translate(-50,-50%);
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    min-height: 200px;
+}
+
+.col-2-photo{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+
+@media (max-width: 800px) {
+    .col-2{
+        grid-template-columns: 1fr ;
+        /* justify-content: center; */
+    }
+
+    .col-2-photo{
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    
+    .col{
+        border: none;
+
+    }
+
+    .col-3{
+        width: 95%;
+    }
+
+    .lifestyle{
+        height: 300px;
+    }
+
+    .lifestyle h1{
+        font-size: 2rem;
+    }
+}

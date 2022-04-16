@@ -1,0 +1,192 @@
+.fashion-bg{
+    height: 380px;
+    display: flex;
+    background-image: url(/images/fashiooon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(92, 90, 90);
+    background-blend-mode: multiply;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.slide{
+    position: absolute;
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 340px;
+    width: 60%;
+    top: -100%;
+    text-align: center;
+    animation: slide 1.5s 300ms linear forwards;
+    background-color: rgba(255, 255, 255),0.1;
+    backdrop-filter: blur(5px);
+    border: 1.3px solid grey;
+    
+}
+
+.fashion-bg h3{
+    font-family: montsbold;
+    font-size: 2rem;
+    margin-bottom: 7px;
+    top: -100%;
+    padding: 5px 10px;
+    background-color: black;
+}
+
+.fashion-bg p{
+    opacity: 0;
+    animation: opac 1.5s 2s linear forwards;
+
+}
+
+@keyframes opac {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    to{
+        top: 20px;
+    }
+}
+
+.grid-2-cont{
+    width: 90%;
+    margin: 10px auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.item-photo{
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    min-height: 330px;
+    margin: 1rem 0;
+    /* border: 1px solid hsl(192, 100%, 9%); */
+}
+
+.items p{
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* text-align: center; */
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cen h3{
+    font-family: montsbold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.btn1{
+    text-decoration: none;
+    color: hsl(192, 100%, 9%);
+    font-family: inherit;
+    margin-top: 10px;
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.btn1:hover{
+    font-family: montsbold;
+}
+
+.btn1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #35424a;
+    height: 1.3px;
+    transform: scale(0);
+    width: 100%;
+    transition: .5s ease-in-out;
+    transform-origin: left;
+}
+
+.btn1:hover::after{
+    transform: scale(1);
+    transform-origin: right;
+    
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    .slide{
+        width: 85%;
+    }
+    .items{
+        grid-template-columns: 1fr;
+        border: 1px solid grey;
+        grid-gap: 5px;
+    }    
+
+    .cen{
+        display: block;
+       
+    }
+
+}
+
+@media (max-width: 400px) {
+    .slide{
+        width: 96%;
+    }
+
+    .fashion-bg{
+        height: 300px;
+    }
+
+    .item-photo{
+        height: 200px;
+        /* border: 3px solid green; */
+    }
+
+    .slide{
+        height: 260px;
+    }
+
+    .fashion-bg p{
+        font-size: 10px;
+        width: 90%;
+    }
+}
+
