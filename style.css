@@ -9,22 +9,22 @@
 
 @font-face {
     font-family: monts;
-    src: url(/fonts/Montserrat-Regular.ttf);
+    src: url(Mozanbinova_Blog/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: montsbold;
-    src: url(/fonts/Montserrat-Bold.ttf);
+    src: url(Mozanbinova_Blog/fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family: slant;
-    src: url(/fonts/Niconne-Regular.ttf);
+    src: url(Mozanbinova_Blog/fonts/Niconne-Regular.ttf);
 }
 
 @font-face {
     font-family: raleway;
-    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+    src: url(Mozanbinova_Blog/fonts/Raleway-VariableFont_wght.ttf);
 }
 
 img{
