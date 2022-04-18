@@ -14,17 +14,17 @@
 
 @font-face {
     font-family: montsbold;
-    src: url(Mozanbinova_Blog/fonts/Montserrat-Bold.ttf);
+    src: url(/Mozanbinova_Blog/fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family: slant;
-    src: url(Mozanbinova_Blog/fonts/Niconne-Regular.ttf);
+    src: url(/Mozanbinova_Blog/fonts/Niconne-Regular.ttf);
 }
 
 @font-face {
     font-family: raleway;
-    src: url(Mozanbinova_Blog/fonts/Raleway-VariableFont_wght.ttf);
+    src: url(/Mozanbinova_Blog/fonts/Raleway-VariableFont_wght.ttf);
 }
 
 img{
@@ -40,7 +40,7 @@ a{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monts;
 }
 
 
